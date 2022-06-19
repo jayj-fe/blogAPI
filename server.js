@@ -20,6 +20,9 @@ app.get("/", (req, res)=>{
 });
 
 app.get("/postlist.json", (req, res)=>{
+    const jsonCon = { 'postlist' : filesArr };
+    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
+    
     fs.readFile('./postlist.json', 'utf8', (err, data) => {
         // console.log(data)
         res.json(JSON.parse(data));
@@ -27,6 +30,9 @@ app.get("/postlist.json", (req, res)=>{
 });
 
 app.get("/blogAPI/postlist.json", (req, res)=>{
+    const jsonCon = { 'postlist' : filesArr };
+    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
+
     fs.readFile('./postlist.json', 'utf8', (err, data) => {
         // console.log(data)
         res.json(JSON.parse(data));
@@ -42,6 +48,9 @@ app.get("/blogAPI", (req, res)=>{
 
 app.get("/blogAPI/post/:foldName/:fileName", (req, res) => {
     // console.log(req.params);
+    const jsonCon = { 'postlist' : filesArr };
+    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
+
     fs.readFile(postDir + req.params.foldName +'/'+ req.params.fileName, 'utf8', (err, data) => {
         // console.log(data);
         res.send(data);
