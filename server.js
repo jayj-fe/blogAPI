@@ -14,13 +14,13 @@ app.use(cors(corsOption));
 
 app.get("/", (req, res)=>{
     const jsonCon = { 'postlist' : fileArr };
-    fs.writeFileSync('postlist', JSON.stringify(jsonCon))
+    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
 
     res.sendFile('index.html', { root : __dirname});
 });
 
 app.get("/postlist.json", (req, res)=>{
-    fs.readFile('./postlist', 'utf8', (err, data) => {
+    fs.readFile('./postlist.json', 'utf8', (err, data) => {
         // console.log(data)
         res.json(JSON.parse(data));
     });
@@ -28,7 +28,7 @@ app.get("/postlist.json", (req, res)=>{
 
 app.get("/test", (req, res)=>{
     const jsonCon = { 'postlist' : fileArr };
-    fs.writeFileSync('postlist', JSON.stringify(jsonCon))
+    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
 
     res.sendFile('index.html', { root : __dirname});
 });
@@ -36,7 +36,7 @@ app.get("/test", (req, res)=>{
 
 app.get("/blogAPI", (req, res)=>{
     const jsonCon = { 'postlist' : fileArr };
-    fs.writeFileSync('postlist', JSON.stringify(jsonCon))
+    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
 
     res.json(jsonCon);
 });
