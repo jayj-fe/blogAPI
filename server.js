@@ -26,13 +26,12 @@ app.get("/postlist.json", (req, res)=>{
     });
 });
 
-app.get("/test", (req, res)=>{
-    const jsonCon = { 'postlist' : fileArr };
-    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
-
-    res.sendFile('index.html', { root : __dirname});
+app.get("/blogAPI/postlist.json", (req, res)=>{
+    fs.readFile('./postlist.json', 'utf8', (err, data) => {
+        // console.log(data)
+        res.json(JSON.parse(data));
+    });
 });
-
 
 app.get("/blogAPI", (req, res)=>{
     const jsonCon = { 'postlist' : fileArr };
@@ -42,7 +41,7 @@ app.get("/blogAPI", (req, res)=>{
 });
 
 app.get("/blogAPI/post/:fileName", (req, res) => {
-    fs.readFile(postDir+req.params.fileName+'.md', 'utf8', (err, data) => {
+    fs.readFile(postDir+req.params.fileName, 'utf8', (err, data) => {
         // console.log(data);
         res.send(data);
     });
@@ -76,7 +75,7 @@ app.listen(9000, ()=>{
                 'data' : fileInfoObj[2],
                 'categories' : fileInfoObj[3].slice(1, -1).split(', '),
                 'tags': fileInfoObj[4].slice(1, -1).split(', '),
-                'url' : url.slice(1, -3)
+                'url' : url.slice(1, -5)
             }
             fileArr.push(obj);
             console.log(obj);
