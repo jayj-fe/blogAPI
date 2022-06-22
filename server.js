@@ -1,5 +1,6 @@
 const express = require('express');
 const fs = require('fs');
+const path = require('path');
 const cors = require('cors');
 const app = express();
 const postDir = './post/';
@@ -55,6 +56,10 @@ app.get("/blogAPI/post/:foldName/:fileName", (req, res) => {
         // console.log(data);
         res.send(data);
     });
+});
+
+app.get("/blogAPI/assets/:foldName/:subFoldName/:fileName", (req, res) => {
+    res.sendFile(path.resolve(path.resolve(__dirname, './assets/' + req.params.foldName +'/' + req.params.subFoldName +'/'+ req.params.fileName)));
 });
 
 app.listen(9000, ()=>{

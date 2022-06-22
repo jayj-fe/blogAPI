@@ -6,142 +6,51 @@ categories: [javascript]
 tags: [javascript]
 ---
 
-## AMD
+## MVC 란
 
-AMD(Asynchronous Module Definition)란 모듈을 정의하는 방법과 모듈이 필요할 때 비동기로 로딩하는 방법을 정의한 API 이다.
-AMD는 세 가지의 핵심 개념을 가지고 동작한다.
+MVC는 Model, View, Controller의 약자이다.<br>
+MVC는 사용자 인터페이스, 데이터 및 논리 제어를 구현하는데 널리 사용되는 소프트웨어 디자인 패턴이다.<br>
+소프트웨어의 비즈니스 로직과 화면을 구분하는데 중점을 두고 있다.<br>
+
+<img src="/assets/img/architecture/mvc.png" alt="" style="max-width:500px">
+
+User는 Controller에게 요청하고, Controller는 Model에게 명령을 보내고,<br>
+Model은 해당의 데이터를 View에게 제공하여, User는 View를 통해 정보를 얻을 수 있다.<br>
 <br>
-#### 1. 동적 로딩
-
-동적 로딩(Dynamic Loading, Lazy Loading)은 페이지 렌더링을 방해하지 않으면서 필요한 파일만 로딩할 수 있다.
-
-브라우저는 문서를 위에서 아래로 읽어내려오며, \<script\> 태그를 만나면 \<script\>의 HTTP 요청과 다운로드, 파싱(Parsing), 실행이 일어나는 동안 브라우저는 다른 동작을 하지 않는다.
-그로 인하여 페이지 렌더링은 느려지는데, 이를 최적화 하는 기법으로 \<script\> 태그를 \<body\> 태그의 마지막에 배치하는 방법이 있다.
-하지만 이 방법 또한 첫 렌더링과 첫 인터랙션에 필요하지 않은, 페이지에 필요한 모든 JavaScript를 로딩하기 때문에 사용자가 첫 화면을 보는 데까지 걸리는 시간은 줄어들지 않는다.
-
-좀 더 최적화 된 기법으로 첫 렌더링과 첫 인터랙션에 필요한 javascript만 먼저 로딩하고, 나머지를 로딩하는 방식이 동적 로딩 방식이라 한다.
-
+하나 하나의 기능을 자세히 살펴보면 아래와 같다.<br>
 <br>
-#### 2. 모듈화
 
-모듈(module) 이라는 것은 전체 애플리케이션의 일부를 독립된 코드로 분리해서 만들어 놓은 것을 말한다.
-관련된 유용한 기능을 모아둔 모듈이라 할 수 있으며 크게는 jQuery 와 같은 라이브러리도 모듈이라 할 수 있다.
+### Model
 
-스크립트의 모듈화는 스크립트 내부에서만 사용하는 변수와 함수들을 전역 공간에 저장하는 것을 방지한다.
-전역 공간에 변수가 있음으로 문제가 발생하는 것을 최소화 및 방지할 수 있다.
-> 전역 변수에 있음으로 발생하는 문제 :
-> 참고 사이트 - <a href="https://blog.perfectacle.com/2017/05/20/js-005-module/">https://blog.perfectacle.com/2017/05/20/js-005-module/</a>
-
+모델(model)이란 어떠한 동작을 수행하는 코드를 말한다.<br>
+모델은 데이터가 무엇인지를 정의한다.<br>
+데이터 자체는 사용자에게 어떻게 보일지에 대해 신경쓰지 않아도 된다.<br>
 <br>
-#### 3. 의존성 관리
-
-의존성이란 코드에서 두 모듈 간의 연결, 객체지향언어에서는 두 클래스 간의 관계라고도 말한다.
-일반적으로 둘 중 하나가 다른 하나를 어떤 용도를 위해 사용한다.
-
-자바스크립트는 기본적으로 코드 내에서 외부 코드를 불러오는 방법이 제공되지 않고 html의 script 태그에 의존하여 코드를 로드하게 된다.
-기존의 방식은 HTML에서 의존관계에 따라 순서대로 스크립트를 로드하고, 코드내에서 네임스페이스를 정의하여 사용하는 방식이였다.
-
-하지만 이런 방식은 개발자가 그 의존관계와 순서를 일일이 신경 써야 하고, 어플리케이션의 규모가 커질수록 관리하는데 있어 어려움이 있다.
-이러한 문제를 해결하기 위해 의존성에 대한 관리가 필요하다.
+모델은 순수하게 public 함수로만 이루어진다.<br>
+모델은 모델의 상태에 변화가 있을 때 컨트롤러와 뷰에 이를 통보한다.<br>
+어떤 MVC 구현에서는 통보 대신 뷰나 컨트롤러가 직접 모델의 상태를 읽어 오기도 한다.<br>
 
 <br>
 
-## require.js
+### View
 
-AMD API를 지원하는 프레임웍이다.
-
-- require.js 공식 사이트 및 사용법
-> https://requirejs.org/docs/api.html
+View(뷰)란 데이타를 기반으로 사용자들이 볼 수 있는 화면이다.<br>
+뷰는 사용자가 볼 결과물을 생성하기 위해 모델로부터 정보를 얻어 온다.<br>
+MVC에서 모델은 여러 개의 뷰를 가질 수 있다.<br>
+뷰는 모델에게 질의를 하여 모델로 부터 값을 가져와 사용자에게 보여준다.<br>
 
 <br>
 
-### require 초기화 및 설정
+### Controller
 
-```js
-/*
- * 초기화 및 설정
- * config.js
- */
- require.config({
-    /*
-        baseUrl:
-        JavaScript 파일이 있는 기본 경로를 설정한다.
-        만약 data-main 속성이 사용되었다면, 그 경로가 baseUrl이 된다.
-        data-main 속성은 require.js를 위한 특별한 속성으로 require.js는 스크립트 로딩을 시작하기 위해 이 부분을 체크한다.
-    */
-     baseUrl : '폴더명',
-     /*
-        paths:
-        path는 baseUrl 아래에서 직접적으로 찾을 수 없는 모듈명들을 위해 경로를 매핑해주는 속성이다.
-        "/"로 시작하거나 "http" 등으로 시작하지 않으면, 기본적으로는 baseUrl에 상대적으로 설정하게 된다.
+Controller(컨트롤러)는 데이터와 사용자인터페이스 요소들을 잇는 다리역할로써<br>
+사용자로부터의 입력에 대한 응답으로 모델 및 뷰를 업데이트하는 로직을 포함한다.<br>
 
-        paths: {
-            "exam": "aaaa/bbbb"
-        }
-
-        의 형태로 설정한 뒤에, define에서 "exam/module" 로 불러오게 되면, 스크립트 태그에서는 실제로는 src="aaaa/bbbb/module.js" 로 잡을 것이다.
-        path는 또한 아래와 같이 특정 라이브러리 경로 선언을 위해 사용될 수 있는데, path 매핑 코드는 자동적으로 .js 확장자를 붙여서 모듈명을 매핑한다.
-        따라서 설정할 때 뒤에 js 확장자는 생략한다.
-    */
-     paths : {
-        '별칭' : '파일경로와 파일명',
-        '별칭' : '파일경로와 파일명'
-     },
-
-    /*
-        shim:
-        AMD 형식을 지원하지 않는 라이브러리의 경우 아래와 같이 shim을 사용해서 모듈로 불러올 수 있다.
-        참고 : http://gregfranko.com/blog/require-dot-js-2-dot-0-shim-configuration/
-
-        shim 설정을 해주면 해당 모듈을 로드하기전에 의존성이 있는 다른 모듈들을 불러올수 있게 설정이 가능했다.
-    */
-     shim : {
-         '별칭' : {
-             deps : [ dependencies, dependencies ],
-             exports : '파일 경로와 파일명'
-             /*
-                exports의 파일이 로드되기 전에
-                deps 배열에 있는 의존성이 있는 모듈들을 먼저 로드한다.
-            */
-         }
-     }
- });
-```
+<br>
 <br>
 
-### require 모듈 정의
-
-```js
-/*
- * 모듈 정의
- * 모듈명.js
- * define() 함수는 모듈을 정의할 때 사용한다.
- * id 는 모듈이 있는 파일 경로 또는 파일명 (id 생략가능하다.)
- * 모듈의 이름을 명시적으로 설정할 수도 있지만 이름 없는 모듈로 정의하는 것을 권장한다.
- * - 이름 없는 모듈은 호출될 때 모듈의 위치에 따라 이름을 결정한다.
- * - 개발할 때 파일의 이름이나 위치는 자주 변경되므로 유연한 상태로 둘 필요가 있다.
- */
-define(id, [dependencies1, dependencies2], function(dependencies1, dependencies2){
-    /*
-        의존 모듈들은 순서대로 매개변수에 담긴다.
-        의존 모듈들이 모두 로딩 완료되면 아래 작성한 코드를 실행한다.
-    */
-});
-```
-<br>
-### require 모듈 호출
-
-```js
-/*
- * 모듈 호출
- * require() 함수는 모듈을 호출할 때 사용한다.
- */
-
-require([dependencies1, dependencies2], function(dependencies1, dependencies2){
-    /*
-        의존 모듈들은 순서대로 매개변수에 담긴다.
-        의존 모듈들이 모두 로딩 완료되면 아래 작성한 코드를 실행한다.
-    */
-})
-```
+## 참고 했던 자료 및 블로그
+ - <a href="https://developer.mozilla.org/ko/docs/Glossary/MVC" target="_blank">https://developer.mozilla.org/ko/docs/Glossary/MVC</a>
+ - <a href="https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC" target="_blank">https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC</a>
+ - <a href="https://m.blog.naver.com/jhc9639/220967034588" target="_blank">https://m.blog.naver.com/jhc9639/220967034588</a>
 
