@@ -14,44 +14,28 @@ let corsOption = {
 app.use(cors(corsOption));
 
 app.get("/", (req, res)=>{
-    const jsonCon = { 'postlist' : filesArr };
-    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
-
     res.sendFile('index.html', { root : __dirname});
 });
 
 app.get("/postlist.json", (req, res)=>{
-    const jsonCon = { 'postlist' : filesArr };
-    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
-    
     fs.readFile('./postlist.json', 'utf8', (err, data) => {
         // console.log(data)
         res.json(JSON.parse(data));
     });
 });
 
-app.get("/blogAPI/postlist.json", (req, res)=>{
-    const jsonCon = { 'postlist' : filesArr };
-    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
-
-    fs.readFile('./postlist.json', 'utf8', (err, data) => {
+app.get("/blogAPI/:fileName", (req, res)=>{
+    fs.readFile('./'+req.params.fileName, 'utf8', (err, data) => {
         // console.log(data)
         res.json(JSON.parse(data));
     });
 });
 
 app.get("/blogAPI", (req, res)=>{
-    const jsonCon = { 'postlist' : filesArr };
-    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
-
     res.json(jsonCon);
 });
 
 app.get("/blogAPI/post/:foldName/:fileName", (req, res) => {
-    // console.log(req.params);
-    const jsonCon = { 'postlist' : filesArr };
-    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon))
-
     fs.readFile(postDir + req.params.foldName +'/'+ req.params.fileName, 'utf8', (err, data) => {
         // console.log(data);
         res.send(data);
@@ -66,47 +50,66 @@ app.listen(9000, ()=>{
     const folders = fs.readdirSync(postDir);
     console.log(folders);
 
-    folders.forEach( el => {
+    const categoriesjsonCon = { 'categorieslist' : folders };
+    fs.writeFileSync('categorieslist.json', JSON.stringify(categoriesjsonCon));
+
+    folders.forEach( (el, idx) => {
         // console.log(el);
         const folderDir = postDir + el + '/';
         // console.log(folderDir);
 
         const files = fs.readdirSync(folderDir);
-        
+        let categoriesFiles = [];
+
         files.forEach( el => {
             const url = folderDir+el;
                 
-            fs.readFile(url, 'utf8', (err, data) => {
-                if (err) {
-                    console.error(err)
-                    return
-                }
+            const result = fs.readFileSync(url, 'utf8');
+            const fileInfoIdx = result.indexOf('---', 2);
+            // console.log(result.slice(5, fileInfoIdx-2));
+            const fileInfoText = result.slice(5, fileInfoIdx-2).replace(/(\r\n|\n|\r)/gm, "::");
+            // console.log(fileInfoText);
+            const fileInfoArr = fileInfoText.split('::');
+            // console.log(fileInfoArr);
 
-                const fileInfoIdx = data.indexOf('---', 2);
-                // console.log(data.slice(5, fileInfoIdx-2));
-                const fileInfoText = data.slice(5, fileInfoIdx-2).replace(/(\r\n|\n|\r)/gm, "::");
-                // console.log(fileInfoText);
-                const fileInfoArr = fileInfoText.split('::');
-                // console.log(fileInfoArr);
+            const fileInfoObj = fileInfoArr.map( (ele) => {
+                const arr = ele.split(': ');
+                return arr[1]
+            })
 
-                const fileInfoObj = fileInfoArr.map( (ele) => {
-                    const arr = ele.split(': ');
-                    return arr[1]
-                })
+            const postDate = fileInfoObj[2].slice(0, 10);
+            console.log(postDate)
 
-                const obj = {
-                    'title' : fileInfoObj[0],
-                    'author' : fileInfoObj[1],
-                    'data' : fileInfoObj[2],
-                    'categories' : fileInfoObj[3].slice(1, -1).split(', '),
-                    'tags': fileInfoObj[4].slice(1, -1).split(', '),
-                    'url' : url.slice(1)
-                }
-                filesArr.push(obj);
-                console.log(obj);
-            });
-        })
+            const obj = {
+                'title' : fileInfoObj[0],
+                'author' : fileInfoObj[1],
+                'date' : new Date(postDate),
+                'categories' : fileInfoObj[3].slice(1, -1).split(', '),
+                'tags': fileInfoObj[4].slice(1, -1).split(', '),
+                'url' : url.slice(1)
+            }
+            
+            categoriesFiles.push(obj);
+            filesArr.push(obj);
+            // console.log(obj);
+        });
+
+        console.log(idx);
+        let categoriesFilesSort = categoriesFiles.sort((a,b) => b.date - a.date );
+        console.log(categoriesFiles);
+
+        let jsonCon = { 'postlist' : categoriesFilesSort };
+        fs.writeFileSync(el+'list.json', JSON.stringify(jsonCon));
     });
+
+    // console.log(filesArr);
+
+    const allFilesSort = filesArr.sort((a,b) => b.date - a.date );
+    // console.log('dataSort');
+    // console.log(allFilesSort);
+
+    const jsonCon = { 'postlist' : allFilesSort };
+    fs.writeFileSync('postlist.json', JSON.stringify(jsonCon));
 
     console.log('server is running');
 })
