@@ -50,8 +50,7 @@ app.listen(9000, ()=>{
     const folders = fs.readdirSync(postDir);
     console.log(folders);
 
-    const categoriesjsonCon = { 'categorieslist' : folders };
-    fs.writeFileSync('categorieslist.json', JSON.stringify(categoriesjsonCon));
+    const categoriesList = [];
 
     folders.forEach( (el, idx) => {
         // console.log(el);
@@ -72,13 +71,16 @@ app.listen(9000, ()=>{
             const fileInfoArr = fileInfoText.split('::');
             // console.log(fileInfoArr);
 
+            const fileCon = result.slice(fileInfoIdx+15, fileInfoIdx+500);
+            console.log(fileCon);
+
             const fileInfoObj = fileInfoArr.map( (ele) => {
                 const arr = ele.split(': ');
                 return arr[1]
             })
 
             const postDate = fileInfoObj[2].slice(0, 10);
-            console.log(postDate)
+            // console.log(postDate);
 
             const obj = {
                 'title' : fileInfoObj[0],
@@ -86,7 +88,8 @@ app.listen(9000, ()=>{
                 'date' : new Date(postDate),
                 'categories' : fileInfoObj[3].slice(1, -1).split(', '),
                 'tags': fileInfoObj[4].slice(1, -1).split(', '),
-                'url' : url.slice(1)
+                'url' : url.slice(1),
+                'con' : fileCon
             }
             
             categoriesFiles.push(obj);
@@ -95,6 +98,8 @@ app.listen(9000, ()=>{
         });
 
         console.log(idx);
+        categoriesList.push({ name : el , length : files.length });
+        console.log(categoriesList);
         let categoriesFilesSort = categoriesFiles.sort((a,b) => b.date - a.date );
         console.log(categoriesFiles);
 
@@ -102,11 +107,14 @@ app.listen(9000, ()=>{
         fs.writeFileSync(el+'list.json', JSON.stringify(jsonCon));
     });
 
+    const categoriesjsonCon = { 'categorieslist' : categoriesList };
+    fs.writeFileSync('categorieslist.json', JSON.stringify(categoriesjsonCon));
+
     // console.log(filesArr);
 
     const allFilesSort = filesArr.sort((a,b) => b.date - a.date );
-    // console.log('dataSort');
-    // console.log(allFilesSort);
+    console.log('dataSort');
+    console.log(allFilesSort);
 
     const jsonCon = { 'postlist' : allFilesSort };
     fs.writeFileSync('postlist.json', JSON.stringify(jsonCon));
