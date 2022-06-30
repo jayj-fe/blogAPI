@@ -1,9 +1,12 @@
 ---
-title: Where do you place the JavaScript
+title: AMD & require.js
 author: Jay.J
-date: 2020-07-14 +0000
-categories: [vue]
-tags: [javascript]
+date: 2018-06-23 15:44:39 +0900
+categories: [javascript]
+tags: [javascript, AMD, require.js]
+math: true
+mermaid: true
+image: /blogAPI/assets/img/javaScript.png
 ---
 
 ## AMD
