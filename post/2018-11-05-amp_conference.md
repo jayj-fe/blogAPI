@@ -6,10 +6,7 @@ categories: [conference]
 tags: [conference]
 math: true
 mermaid: true
-# image:
-#   src: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/devices-mockup.png
-#   width: 850
-#   height: 585
+image: /blogAPI/assets/img/amp.jpg
 ---
 
 ## AMP(Accelerated Mobile Pages)

@@ -6,12 +6,8 @@ categories: [Architecture]
 tags: [Architecture, Design Pattern, Retrospect]
 math: true
 mermaid: true
-# image:
-#   src: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/devices-mockup.png
-#   width: 850
-#   height: 585
+image: /blogAPI/assets/img/codeigniter.png
 ---
-<!-- <img src="/assets/img/vue/webkitflow.png" alt=""> -->
 
 회사에서 개발팀에 코드이그나이터를 도입하였다.<br>
 개발팀에 도입한다고 해서 사실 크게 관심이 없었으며,<br>

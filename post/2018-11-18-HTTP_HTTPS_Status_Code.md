@@ -2,8 +2,8 @@
 title: HTTP 와 HTTPS, Status Code
 author: Jay.J
 date: 2018-11-18 12:33:39 +0900
-categories: [html]
-tags: [html]
+categories: [HTTP]
+tags: [HTTP]
 math: true
 mermaid: true
 # image:

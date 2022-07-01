@@ -39,7 +39,7 @@ app.get("/blogAPI/:fileName", (req, res)=>{
 });
 
 app.get("/blogAPI/post/:fileName", (req, res) => {
-    fs.readFile(postDir + req.params.fileName, 'utf8', (err, data) => {
+    fs.readFile(postDir + req.params.fileName +'.md', 'utf8', (err, data) => {
         // console.log(data);
         res.send(data);
     });
@@ -51,6 +51,10 @@ app.get("/blogAPI/assets/:foldName/:fileName", (req, res) => {
 
 app.get("/blogAPI/assets/:foldName/:subFoldName/:fileName", (req, res) => {
     res.sendFile(path.resolve(path.resolve(__dirname, './assets/' + req.params.foldName +'/' + req.params.subFoldName +'/'+ req.params.fileName)));
+});
+
+app.get("/blogAPI/assets/:foldName/:subFoldName/:subFoldName2/:fileName", (req, res) => {
+    res.sendFile(path.resolve(path.resolve(__dirname, './assets/' + req.params.foldName +'/' + req.params.subFoldName+'/' + req.params.subFoldName2 +'/'+ req.params.fileName)));
 });
 
 app.listen(9000, ()=>{
@@ -99,7 +103,7 @@ app.listen(9000, ()=>{
             'math' : fileInfoObj[5],
             'mermaid' : fileInfoObj[6],
             'img' : fileInfoObj[7],
-            'url' : (postDir + el).slice(1),
+            'url' : (postDir + el).slice(1, -3),
             'con' : fileCon
         }
 
