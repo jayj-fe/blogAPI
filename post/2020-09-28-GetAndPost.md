@@ -6,10 +6,7 @@ categories: [HTTP]
 tags: [HTTP]
 math: true
 mermaid: true
-# image:
-#   src: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/devices-mockup.png
-#   width: 850
-#   height: 585
+image: /blogAPI/assets/img/http.png
 ---
 
 웹 브라우저로 어떤 사이트에 접속한다고 했을 때, 사용자는 URL을 입력하여 접근한다.<br>
