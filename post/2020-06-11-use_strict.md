@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/javaScript.png
 ---
 
+<br>
+
 ## 자바스크립트 엄격모드란 ?
 
 ECMAScript 5 에서 소개되었다.<br>

@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/javaScript.png
 ---
 
+<br>
+
 ## AMD
 
 AMD(Asynchronous Module Definition)란 모듈을 정의하는 방법과 모듈이 필요할 때 비동기로 로딩하는 방법을 정의한 API 이다.

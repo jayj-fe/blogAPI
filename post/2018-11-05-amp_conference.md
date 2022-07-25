@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/amp.jpg
 ---
 
+<br>
+
 ## AMP(Accelerated Mobile Pages)
 AMP는 Accelerated Mobile Pages의 약자로 Google에서 만든 오픈소스이며,  
 웹 페이지를 빠르고 번개와 같이 즉시 로딩 될 수 있게  

@@ -9,6 +9,10 @@ mermaid: true
 image: /blogAPI/assets/img/javaScript.png
 ---
 
+<br>
+
+## Javascript에서의 This
+
 this가 무엇이냐라고 누군가 물어봤을 때 의미 자체에 순간 망설였던 적이 있었다.<br>
 그래서 this는 무엇이고 어떻게 동작하는 지에 대해 포스팅 하려고 한다.
 
@@ -227,7 +231,7 @@ testObj1.outerFunc()
 <br>
 
 ## 참고 했던 자료 및 블로그
-- <a href="https://blueshw.github.io/2018/03/12/this/">https://blueshw.github.io/2018/03/12/this/</a>
-- <a href="https://im-developer.tistory.com/96">https://im-developer.tistory.com/96</a>
-- <a href="https://kim-solshar.tistory.com/57">https://kim-solshar.tistory.com/57</a
+- <a href="https://blueshw.github.io/2018/03/12/this/" target="_blank">https://blueshw.github.io/2018/03/12/this/</a>
+- <a href="https://im-developer.tistory.com/96" target="_blank">https://im-developer.tistory.com/96</a>
+- <a href="https://kim-solshar.tistory.com/57" target="_blank">https://kim-solshar.tistory.com/57</a
 

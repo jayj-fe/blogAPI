@@ -6,11 +6,10 @@ categories: [html]
 tags: [html, Web Accessibility]
 math: true
 mermaid: true
-# image:
-#   src: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/devices-mockup.png
-#   width: 850
-#   height: 585
+image: /blogAPI/assets/img/accessibility.jpg
 ---
+
+<br>
 
 ## 인식의 용이성
 모든 콘텐츠는 사용자가 인식할 수 있어야 한다.

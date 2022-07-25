@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/javaScript.png
 ---
 
+<br>
+
 ## How do you stop event propagation?
 > 이벤트 전파를 어떻게 중지합니까?
 
@@ -75,9 +77,9 @@ function clickEvent(target){
 <br>
 
 ### preventDefault
-event.preventDefault는 현재 이벤트의 기본 동작을 중단시킨다.
-event.Default의 기능은 a태그를 생각하면 이해가 쉽다.
-a태그는 기본 동작으로 URL 이동을 가지고 있는 태그이다.
+event.preventDefault는 현재 이벤트의 기본 동작을 중단시킨다.<br>
+event.Default의 기능은 a태그를 생각하면 이해가 쉽다.<br>
+a태그는 기본 동작으로 URL 이동을 가지고 있는 태그이다.<br>
 <b>a태그의 기본 동작인 URL 이동을 하지 않고 이벤트만 실행하고자 할 때 해당 코드로 기본 동작을 막을 수 있다</b>.
 
 <hr>
@@ -135,9 +137,9 @@ function clickEvent(target){
 <br>
 
 ### stopPropagation
-event.stopPropagation는 현재 이벤트가 상위로 전파되는걸 중단시킨다.
-위에 있는 코드를 확인해보면 제일 하위의 엘리먼트의 이벤트가 실행되면,
-상위에 존재하는 모든 이벤트들이 모두 실행된다.
+event.stopPropagation는 현재 이벤트가 상위로 전파되는걸 중단시킨다.<br>
+위에 있는 코드를 확인해보면 제일 하위의 엘리먼트의 이벤트가 실행되면,<br>
+상위에 존재하는 모든 이벤트들이 모두 실행된다.<br>
 이벤트가 전파되는 동작인데, 해당 코드를 가지고 <b>상위로 전파되는 이벤트를 막을 수 있다</b>.
 
 <hr>
@@ -194,7 +196,7 @@ function clickEvent(target){
 <br>
 
 ### stopImmediatePropagation
-event.stopImmediatePropagation는 현재 이벤트가 상위 뿐만 아니라 현재 레벨에 걸린 다른 이벤트도 중단시킨다.
+event.stopImmediatePropagation는 현재 이벤트가 상위 뿐만 아니라 현재 레벨에 걸린 다른 이벤트도 중단시킨다.<br>
 해당 코드가 있는 이벤트 외에 <b>같은 레벨과 상위 레벨의 이벤트를 중단</b>시킨다.
 
 <hr>
@@ -253,8 +255,9 @@ function clickEvent(target){
 > codepen : <a href="https://codepen.io/anon/pen/pLqNKN" target="_blank">https://codepen.io/anon/pen/pLqNKN</a>
 
 <br>
-## 참고 했던 자료 및 블로그
-- <a href="https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/">https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/</a>
 
- - <a href="https://programmingsummaries.tistory.com/313" target="_blank">https://programmingsummaries.tistory.com/313</a>
+## 참고 했던 자료 및 블로그
+
+- <a href="https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/" target="_blank">https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/</a>
+- <a href="https://programmingsummaries.tistory.com/313" target="_blank">https://programmingsummaries.tistory.com/313</a>
 

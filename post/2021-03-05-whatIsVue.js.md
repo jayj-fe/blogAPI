@@ -9,13 +9,15 @@ mermaid: true
 image: /blogAPI/assets/img/vuejs.png
 ---
 
+<br>
+
 ## Vue.js 란 무엇인가?
 
 Vue.js의 공식문서에서는 <b>'사용자 인터페이스를 만들기 위한 프로그레시브 프레임워크'</b> 라고 설명하고 있다.<br>
 즉, 보여지는 화면을 만드는 자바스크립트 프레임워크 중의 하나이다.<br>
 Vue.js는 진입장벽이 낮으며 쉽고 빠르게 개발을 할 수 있다는 것이 가장 큰 장점으로 가지고 있다.<br>
 
-> <a href="https://kr.vuejs.org/v2/guide/index.html">Vue.js 공식사이트</a>
+> <a href="https://kr.vuejs.org/v2/guide/index.html" target="_blank">Vue.js 공식사이트</a>
 
 <br>
 
@@ -56,7 +58,7 @@ ReactDOM.render(
 );
 
 ```
-> <a href="https://reactjs-kr.firebaseapp.com/docs/conditional-rendering.html">React.js 공식사이트-조건문</a>
+> <a href="https://reactjs-kr.firebaseapp.com/docs/conditional-rendering.html" target="_blank">React.js 공식사이트-조건문</a>
 
 ```js
 // Vue
@@ -74,7 +76,7 @@ var app = new Vue({
 })
 
 ```
-> <a href="https://kr.vuejs.org/v2/guide/#%EC%A1%B0%EA%B1%B4%EB%AC%B8%EA%B3%BC-%EB%B0%98%EB%B3%B5%EB%AC%B8">Vue.js 공식사이트-조건문</a>
+> <a href="https://kr.vuejs.org/v2/guide/#%EC%A1%B0%EA%B1%B4%EB%AC%B8%EA%B3%BC-%EB%B0%98%EB%B3%B5%EB%AC%B8" target="_blank">Vue.js 공식사이트-조건문</a>
 
 사용자가 가상 DOM 개념에 익숙하지않고,<br>
 JavaScript로 제어보다(렌더 함수) HTML의 형식이 조금 익숙하다면,<br>
@@ -184,7 +186,7 @@ DOM의 변화가 생기면 브라우저는 Render Tree를 재생성하고, Layou
 
 
 ## 참고 했던 자료 및 블로그
-- <a href="https://kr.vuejs.org/">https://kr.vuejs.org/</a>
-- <a href="https://ko.wikipedia.org/wiki/Vue.js">https://ko.wikipedia.org/wiki/Vue.js</a>
-- <a href="https://velog.io/@jojo_devstory/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4-MVVM%EC%9D%B4-%EB%AD%98%EA%B9%8C">https://velog.io/@jojo_devstory/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4-MVVM%EC%9D%B4-%EB%AD%98%EA%B9%8C</a>
-- <a href="https://www.howdy-mj.me/dom/what-is-dom/">https://www.howdy-mj.me/dom/what-is-dom/</a>
+- <a href="https://kr.vuejs.org/" target="_blank">https://kr.vuejs.org/</a>
+- <a href="https://ko.wikipedia.org/wiki/Vue.js" target="_blank">https://ko.wikipedia.org/wiki/Vue.js</a>
+- <a href="https://velog.io/@jojo_devstory/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4-MVVM%EC%9D%B4-%EB%AD%98%EA%B9%8C" target="_blank">https://velog.io/@jojo_devstory/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4-MVVM%EC%9D%B4-%EB%AD%98%EA%B9%8C</a>
+- <a href="https://www.howdy-mj.me/dom/what-is-dom/" target="_blank">https://www.howdy-mj.me/dom/what-is-dom/</a>

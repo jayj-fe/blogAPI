@@ -9,6 +9,10 @@ mermaid: true
 image: /blogAPI/assets/img/codeigniter.png
 ---
 
+<br>
+
+## CI(codeigniter)의 MVC패턴 프로젝트 후기
+
 회사에서 개발팀에 코드이그나이터를 도입하였다.<br>
 개발팀에 도입한다고 해서 사실 크게 관심이 없었으며,<br>
 큰 영향도 없을 것이라고 생각했다.<br>
@@ -20,7 +24,7 @@ image: /blogAPI/assets/img/codeigniter.png
 
 Codeigniter(이하 코드이그나이터)란 PHP로 작성된 웹 프레임워크다.<br>
 MVC패턴으로 동작한다.<br>
-> <a href="/posts/whatIsMVC/">MVC에 관한 포스팅</a>
+> <a href="/blog/posts/%2Fpost%2F2019-05-09-whatIsMVC" target="_blank">MVC에 관한 포스팅</a>
 
 <br>
 
@@ -74,12 +78,12 @@ Ajax 또한 URL 접근인데 그 기본을 잊어버리고 한참 동작오류�
 
 <br>
 
-## 결론
+## 후기
 
 최근 MV* 기반의 자바스크립트 프레임워크가 많은 인기를 얻고 있다.<br>
 그런 측면에서 경험을 잘 해볼 수 없던 MVC패턴을 경험해봤다는 것은 좋았다.<br>
 하지만 Controller만 사용하여 View와 연결만 해본 것만으로는<br>
 장점과 단점을 구분하기 많이 부족했다.<br>
 <br>
-현재의 직책이 퍼블리셔이기에 개발의 단계까지 할 수 없었던 것이 많이 아쉬웠다.<br>
+현재의 직무가 퍼블리셔이기에 개발의 단계까지 할 수 없었던 것이 많이 아쉬웠다.<br>
 기회가 된다면 MV* 의 디자인패턴에서 개발까지 해보면 좋을 것 같다.

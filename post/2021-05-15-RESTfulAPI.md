@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/restapi.png
 ---
 
+<br>
+
 ## RESTful API란?
 
 REST를 기반 API를 의미합니다.<br>
@@ -111,7 +113,7 @@ Resource(URI)에 대한 요청을 통일되고, 한정적으로 수행하는 아
     </tr>
   </tbody>
 </table>
-<p style="font-size:0.7rem;text-align:right;color:#ddd;"><a href="https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB%9E%80-REST-RESTful%EC%9D%B4%EB%9E%80">하진쓰의 기술 블로그</a></p>
+<p style="font-size:0.7rem;text-align:right;color:#ddd;"><a href="https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB%9E%80-REST-RESTful%EC%9D%B4%EB%9E%80" target="_blank">하진쓰의 기술 블로그</a></p>
 
 <Br>
 
@@ -148,7 +150,7 @@ REST의 원리를 모두 따르는 시스템을 의미하며, 설계 규칙을 �
 <br>
 
 ## 참고 했던 자료 및 블로그
-- <a href="https://mangkyu.tistory.com/46">https://mangkyu.tistory.com/46</a>
-- <a href="https://blog.metafor.kr/165">https://blog.metafor.kr/165</a>
-- <a href="https://velog.io/@taeha7b/api-restapi-restfulapi">https://velog.io/@taeha7b/api-restapi-restfulapi</a>
-- <a href="https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB%9E%80-REST-RESTful%EC%9D%B4%EB%9E%80">https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB%9E%80-REST-RESTful%EC%9D%B4%EB%9E%80</a>
+- <a href="https://mangkyu.tistory.com/46" target="_blank">https://mangkyu.tistory.com/46</a>
+- <a href="https://blog.metafor.kr/165" target="_blank">https://blog.metafor.kr/165</a>
+- <a href="https://velog.io/@taeha7b/api-restapi-restfulapi" target="_blank">https://velog.io/@taeha7b/api-restapi-restfulapi</a>
+- <a href="https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB%9E%80-REST-RESTful%EC%9D%B4%EB%9E%80" target="_blank">https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB%9E%80-REST-RESTful%EC%9D%B4%EB%9E%80</a>

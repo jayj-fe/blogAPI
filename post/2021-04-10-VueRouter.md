@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/vuejs.png
 ---
 
+<br>
+
 ## Vue Router 란
 
 'Vue 라우터는 Vue.js (opens new window)의 공식 라우터이며,<br>
@@ -25,7 +27,7 @@ SPA를 사용함으로써 전체 페이지를 렌더링하는데 드는 오버�
 <br>
 
 ## Vue Router 사용하기
-> [아래 코드따라 작성된 예제 다운로드](https://github.com/jayj-fe/Vue-Router-TestRepository)
+> <a href="https://github.com/jayj-fe/Vue-Router-TestRepository" target="_blank">아래 코드따라 작성된 예제 다운로드</a>
 
 ### 1. 설치
 
@@ -53,7 +55,7 @@ Vue.use(VueRouter)
 ### 2. router 설정하기
 
 vue-cli 를 통해 뷰 프로젝트를 생성했다면 아래와 같은 구조일 것이다.
-> [vue-cli 프로젝트 생성하기](/posts/VueCLI/)
+> <a href="/blog/posts/2021-03-14-VueCLI">vue-cli 프로젝트 생성하기</a>
 
 <img src="/assets/img/vue/router_01.jpg" alt="" style="border-radius: 5px;left: 0;transform: none;">
 
@@ -327,7 +329,7 @@ router-view 는 동적인 컴포넌트으로써 상위에 transition 컴포넌�
 
 
 ## 참고 했던 자료 및 블로그
-- <a href="https://router.vuejs.org/kr/">https://router.vuejs.org/kr/</a>
-- <a href="https://kshman94.tistory.com/132">https://kshman94.tistory.com/132</a>
-- <a href="https://www.kyungyeon.dev/posts/12">https://www.kyungyeon.dev/posts/12</a>
-- <a href="https://vuejs.org/v2/guide/transitions.html">https://vuejs.org/v2/guide/transitions.html</a>
+- <a href="https://router.vuejs.org/kr/" target="_blank">https://router.vuejs.org/kr/</a>
+- <a href="https://kshman94.tistory.com/132" target="_blank">https://kshman94.tistory.com/132</a>
+- <a href="https://www.kyungyeon.dev/posts/12" target="_blank">https://www.kyungyeon.dev/posts/12</a>
+- <a href="https://vuejs.org/v2/guide/transitions.html" target="_blank">https://vuejs.org/v2/guide/transitions.html</a>

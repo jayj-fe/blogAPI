@@ -6,12 +6,12 @@ categories: [html]
 tags: [html, Web Accessibility]
 math: true
 mermaid: true
-# image:
-#   src: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/devices-mockup.png
-#   width: 850
-#   height: 585
+image: /blogAPI/assets/img/accessibility.jpg
 ---
-<!-- <img src="/assets/img/vue/webkitflow.png" alt=""> -->
+
+<br>
+
+## &nbsp;
 
 이전 회사에서 웹 접근성에 대해 공부를 했었다.<br>
 공부했던 내용을 정리해두면 좋겠다는 생각이 있었는데,<br>
@@ -73,10 +73,11 @@ mermaid: true
 
 검사항목들에 대해 어떻게 지켜야 하는지 자세한 내용은 각 원칙별로 나눠서 정리했다.
 
-- [인식의 용이성 보러가기](/posts/webAccessibility_2/)
-- [운용의 용이성 보러가기](/posts/webAccessibility_3/)
-- [이해의 용이성 보러가기](/posts/webAccessibility_4/)
-- [견고성 보러가기](/posts/webAccessibility_5/)
+- <a href="/blog/posts/%2Fpost%2F2020-03-07-webAccessibility_2">인식의 용이성 보러가기</a>
+- <a href="/blog/posts/%2Fpost%2F2020-03-14-webAccessibility_3">운용의 용이성 보러가기</a>
+- <a href="/blog/posts/%2Fpost%2F2020-03-21-webAccessibility_4">이해의 용이성 보러가기</a>
+- <a href="/blog/posts/%2Fpost%2F2020-03-22-webAccessibility_5">견고성 보러가기</a>
+
 
 <br>
 

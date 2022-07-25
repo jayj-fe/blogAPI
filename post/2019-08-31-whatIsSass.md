@@ -9,6 +9,10 @@ mermaid: true
 image: /blogAPI/assets/img/sass.png
 ---
 
+<br>
+
+## &nbsp;
+
 최근 프론트쪽을 담당하는 직군의 기술 스택을 보면 Sass를 심심찮게 볼 수 있습니다.
 그래서 Sass는 무엇인가에 대해서 알아보려고 합니다.
 

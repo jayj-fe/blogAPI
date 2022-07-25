@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/http.png
 ---
 
+<br>
+
 ## 쿠키(Cookie)
 
 사용자가 어떠한 웹 사이트를 방문할 경우 사용자의 컴퓨터에 저장하는 작은 기록 정보 파일이다.<br>
@@ -152,5 +154,5 @@ image: /blogAPI/assets/img/http.png
 <br>
 
 ## 참고 했던 자료 및 블로그
-- <a href="https://hahahoho5915.tistory.com/32">https://hahahoho5915.tistory.com/32</a>
-- <a href="https://interconnection.tistory.com/74">https://interconnection.tistory.com/74</a>
+- <a href="https://hahahoho5915.tistory.com/32" target="_blank">https://hahahoho5915.tistory.com/32</a>
+- <a href="https://interconnection.tistory.com/74" target="_blank">https://interconnection.tistory.com/74</a>

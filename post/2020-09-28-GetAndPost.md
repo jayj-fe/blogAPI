@@ -9,6 +9,10 @@ mermaid: true
 image: /blogAPI/assets/img/http.png
 ---
 
+<br>
+
+## &nbsp;
+
 웹 브라우저로 어떤 사이트에 접속한다고 했을 때, 사용자는 URL을 입력하여 접근한다.<br>
 HTTP 프로토콜을 통하여 사용자는 요청을 보내고 서버는 그 요청에 맞게 응답한다.<br>
 그리고 그 요청의 방식에는 크게 2가지 방식이 있고 그것이 바로 GET방식과 POST방식이다
@@ -63,6 +67,6 @@ BODY에 데이터를 담아서 전송하기 때문에 Body의 데이터에 대�
 <br>
 
 ## 참고 했던 자료 및 블로그
-- <a href="https://mangkyu.tistory.com/17">https://mangkyu.tistory.com/17</a>
-- <a href="https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/">https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/</a>
+- <a href="https://mangkyu.tistory.com/17" target="_blank">https://mangkyu.tistory.com/17</a>
+- <a href="https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/" target="_blank">https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/</a>
 

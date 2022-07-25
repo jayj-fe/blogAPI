@@ -9,7 +9,9 @@ mermaid: true
 image: /blogAPI/assets/img/httphttps.jpg
 ---
 
-## HTTP 와 HTTPS 란  
+<br>
+
+## &nbsp;
   
 인터넷을 사용하다보면 HTTP와 HTTPS로 시작되는 주소를 볼 수 있다.    
 어떤 차이가 있어서 HTTP와 HTTPS를 나눠서 쓰는지 알아보려고 한다.  

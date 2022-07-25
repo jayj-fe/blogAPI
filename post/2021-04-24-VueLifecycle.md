@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/vuejs.png
 ---
 
+<br>
+
 ## Vue Lifecycle 이해하기
 
 모든 Vue 앱은 Vue 함수로 새 Vue 인스턴스를 만드는 것부터 시작한다.
@@ -239,7 +241,7 @@ Vue 인스턴스의 component에 걸려 있는 모든 이벤트가 해제된다.
 <br>
 
 ## 참고 했던 자료 및 블로그
-- <a href="https://kr.vuejs.org/v2/guide/instance.html#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%ED%9B%85">https://kr.vuejs.org/v2/guide/instance.html#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%ED%9B%85</a>
-- <a href="https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4">https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4</a>
-- <a href="https://blog.martinwork.co.kr/vuejs/2018/02/05/vue-lifecycle-hooks.html">https://blog.martinwork.co.kr/vuejs/2018/02/05/vue-lifecycle-hooks.html</a>
-- <a href="https://beomy.tistory.com/47">https://beomy.tistory.com/47</a>
+- <a href="https://kr.vuejs.org/v2/guide/instance.html#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%ED%9B%85" target="_blank">https://kr.vuejs.org/v2/guide/instance.html#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%ED%9B%85</a>
+- <a href="https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4" target="_blank">https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4</a>
+- <a href="https://blog.martinwork.co.kr/vuejs/2018/02/05/vue-lifecycle-hooks.html" target="_blank">https://blog.martinwork.co.kr/vuejs/2018/02/05/vue-lifecycle-hooks.html</a>
+- <a href="https://beomy.tistory.com/47" target="_blank">https://beomy.tistory.com/47</a>

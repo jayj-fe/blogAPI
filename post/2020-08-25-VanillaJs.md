@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/javaScript.png
 ---
 
+<br>
+
 ## Vanilla JS란?
 Vanilla JS(바닐라 자바스크립트)란 어떠한 프레임워크와 라이브러리가 적용되지 않은 날 것의 자바스크립트를 바닐라 자바스크립트라고 한다.
 
@@ -69,5 +71,5 @@ jQuery에 익숙해진 개발자가, jQuery를 걷어내고 개발을 하게 되
 
 
 ## 참고 했던 자료 및 블로그
-- <a href="http://vanilla-js.com/">http://vanilla-js.com/</a>
-- <a href="https://mollangk.tistory.com/7">https://mollangk.tistory.com/7</a>
+- <a href="http://vanilla-js.com/" target="_blank">http://vanilla-js.com/</a>
+- <a href="https://mollangk.tistory.com/7" target="_blank">https://mollangk.tistory.com/7</a>

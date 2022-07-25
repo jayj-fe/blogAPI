@@ -9,6 +9,8 @@ mermaid: true
 image: /blogAPI/assets/img/mvc.jpg
 ---
 
+<br>
+
 ## MVC 란
 
 MVC는 Model, View, Controller의 약자이다.<br>

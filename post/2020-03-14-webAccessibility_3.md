@@ -6,11 +6,10 @@ categories: [html]
 tags: [html, Web Accessibility]
 math: true
 mermaid: true
-# image:
-#   src: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/devices-mockup.png
-#   width: 850
-#   height: 585
+image: /blogAPI/assets/img/accessibility.jpg
 ---
+
+<br>
 
 ## 운용의 용이성
 사용자 인터페이스 구성요소는 조작 가능하고 내비게이션 할 수 있어야 한다.

@@ -11,13 +11,15 @@ image: /blogAPI/assets/img/javaScript.png
 
 <br>
 
+## Require.js 을 사용했던 프로젝트에 대한 회고
+
 기존의 프로젝트를 진행할 때에는 필요한 기능을 전역 함수 파일에 추가하여 사용했다.<br>
 전역 파일에 기능을 추가하여 사용하다보니 기능이 늘어날 수록 코드는 복잡해져갔으며 <br>
 모든 페이지에서 불필요한 기능까지 전부 호출하는게 비효율적으로 느껴졌다.<br>
 <br>
 그렇기에 최근 알게 되었던 AMD/Require.js에 관심을 더욱 가지게 되었으며, <br>
 신규 프로젝트에 Require.js를 사용해보기 했다.<br>
-> <a href="/posts/AMD_requirejs/">AMD / Require.js에 대한 포스팅</a>
+> <a href="/blog/posts/%2Fpost%2F2018-06-23-AMD_requirejs">AMD / Require.js에 대한 포스팅</a>
 
 <br>
 
