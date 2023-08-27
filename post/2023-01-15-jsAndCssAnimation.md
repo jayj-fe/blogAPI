@@ -13,16 +13,20 @@ image: /blogAPI/assets/img/css.png
 
 브라우저에서 애니메이션 효과를 사용하기 위해서는 두 가지의 방법을 사용할 수 있습니다. <br>
 CSS의 <b style="color:skyblue">transition / animation</b> 속성과 <br>
-Javascript의 <b style="color:#ffff99">setInterval / requestAnimationFrame </b> 함수를 사용할 수 있습니다.<br>
+Javascript의 <b style="color:#D7DF01">setInterval / requestAnimationFrame </b> 함수를 사용할 수 있습니다.<br>
+<br>
 <br>
 
 <hr>
+<br>
 
 ## CSS 애니메이션
 
 CSS 애니메이션은 Javascript 애니메이션보다 좀 더 간단한 애니메이션을 구현하고 처리하는데 사용합니다.<br>
 transform의 translate를 사용하여 애니메이션을 구현하면 Javascript로 애니메이션을 구현하는 것보다 성능을 개선할 수 있습니다.<br>
 Javascript의 경우 top, left등의 속성 값을 변화시키면 랜더링 과정에서 <b style="color:red">reflow</b> 단계가 여러번 일어나기 때문입니다.
+
+<br>
 
 ### CSS 애니메이션의 장점
 - Javascript보다 구현이 간단하다.
@@ -33,7 +37,10 @@ Javascript의 경우 top, left등의 속성 값을 변화시키면 랜더링 과
 <br>
 <hr>
 
+<br>
+
 ## Javascript 애니메이션
+<br>
 
 Javascript의 애니메이션은 CSS로 처리하는 것보다 훨씬 복잡한 애니메이션을 구현할 수 있습니다.<br>
 다만 Javascript로 애니메이션을 구현할 경우 CSS로 애니메이션을 구현하는 것보다 Reflow가 발생함으로 성능이 떨어진다.<br>
@@ -42,6 +49,8 @@ setInterval 함수로 구현하게 되면 사람들 눈에 전달되는 fps(프�
 requestAnimationFrame 함수는 사람의 육안으로 볼 때 끊김 없고 부드럽게 구현되는 <b style="color:skyblue">60fps</b>를 지원한다.<br>
 <br>
 최근에는 다양한 라이브러리가 많이 나왔는데, 해당 라이브러리들을 이용하면 프레임이나 성능 문제 없이 Javascript로도 좋은 효율을 지닌 애니메이션 구현이 가능하다.
+
+<br>
 
 ### Javascript 애니메이션의 장점
 - 애니메이션을 복잡하게 구현해야할 경우 사용하기 좋습니다.
