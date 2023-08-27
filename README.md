@@ -4,5 +4,12 @@
 <br>
 다른 사이트에서 json 호출이 가능하도록 index.html를 통하여 페이지에 노출시켰습니다.
 
+## 실행방법
+
+```
+npm install
+node serve.js
+```
+
 ## URL
 [https://jayj-fe.github.io/blogAPI/postlist.json](https://jayj-fe.github.io/blogAPI/postlist.json)
