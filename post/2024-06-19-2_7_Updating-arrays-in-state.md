@@ -501,7 +501,6 @@ function ItemList({ artworks, onToggle }) {
 }
 ```
 
-
 <br>
 <br>
 
